@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-DATE=$(date)
+DATE=$(date +%F)
 
 LOGFILE="/tmp/$0-$DATE.log"
 
@@ -22,8 +22,8 @@ else
      echo "ROOT USER"
 fi
 
-yum install mysql -y &>>$LOGFILE
+yum install mysql -y &>> $LOGFILE
 VALIDATE $? "INSTALLING MYSQL----------------------"
 
-yum install git -y &>>$LOGFILE
+yum install git -y &>> $LOGFILE
 VALIDATE $? "INSTALLING GIT------------------------"
