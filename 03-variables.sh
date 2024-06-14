@@ -15,7 +15,8 @@ echo "$PERSON2 : I am great $PERSON1!"
 DATE=$(date)
 echo "DATE is ----- $DATE"
 #---------------------------------------------------------------------
-USERNAME=$1
-PASSWORD=$2
-echo "USERNAME: $USERNAME"
-read -s $PASSWORD
+echo "Enter the USERNAME:"
+read -s USERNAME
+echo "Enter the PASSWORD:"
+read -s PASSWORD
+echo "USERNAME:$USERNAME , PASSWORD:$PASSWORD "
