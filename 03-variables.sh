@@ -18,4 +18,4 @@ echo "DATE is ----- $DATE"
 USERNAME=$1
 PASSWORD=$2
 echo "USERNAME: $USERNAME"
-echo "PASSWORD : $PASSWORD"
+read -s $PASSWORD
