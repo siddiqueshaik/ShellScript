@@ -13,7 +13,7 @@ fi
 echo "Installing mysql---------------"
 yum install mysql -y
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "mysql installation is failed"
     exit 1
@@ -21,9 +21,12 @@ else
     echo "mysql installation is success"
 fi
 
+
+echo "Installing GIT"
+
 yum install git -y
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "GIT installation is failed"
     exit 1
