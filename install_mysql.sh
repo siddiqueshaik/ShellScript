@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if [ $ID -gt 0 ]
+if [ $ID -ne 0 ]
 then
     echo "YOU ARE NOT A ROOT USER"
 else
