@@ -27,3 +27,5 @@ VALIDATE $? "INSTALLING MYSQL----------------------"
 
 yum install git -y &>> $LOGFILE
 VALIDATE $? "INSTALLING GIT------------------------"
+
+echo "$LOGFILE"
